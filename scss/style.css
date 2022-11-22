@@ -78,7 +78,7 @@ header nav ul li {
 header nav ul li a {
   height: 3vh;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: monospace;
   color: rgb(255, 255, 255);
 }
 header nav ul li a:hover {
@@ -86,6 +86,7 @@ header nav ul li a:hover {
 }
 header nav ul li a:nth-child(1).activo {
   transform: scale(1.1, 1.2);
+  font-weight: bold;
 }
 
 main {
@@ -710,6 +711,9 @@ footer .parrafoFooter p {
   }
 }
 @media screen and (max-width: 1276px) {
+  header nav ul li a:nth-child(1).activo {
+    transform: scale(1, 1.1);
+  }
   .mainIdex {
     height: 260vh;
   }
@@ -889,8 +893,8 @@ footer .parrafoFooter p {
   }
 }
 @media screen and (max-width: 814px) {
-  header nav ul li {
-    font-size: 0.7rem;
+  header nav ul {
+    gap: 3.6rem;
   }
   .carousel-inner {
     width: 100vw;

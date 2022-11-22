@@ -69,7 +69,7 @@ header {
                 a {
                     height: 3vh;
                     text-decoration: none;
-                    font-family: "Playfair Display", serif; 
+                    font-family: monospace;
                     color: rgb(255, 255, 255);
 
                     &:hover {
@@ -78,6 +78,7 @@ header {
 
                     &:nth-child(1).activo{
                         transform: scale(1.1, 1.2);
+                        font-weight: bold;
                     }
                 }
             }

@@ -85,6 +85,20 @@
 }
 
 @media screen and (max-width:1276px) {
+    header{
+        nav{
+            ul{
+                li {
+                    a {
+                        &:nth-child(1).activo{
+                            transform: scale(1.0, 1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .mainIdex {
         height: 260vh;
     }
@@ -344,9 +358,7 @@
     header{
         nav{
             ul{
-                li{
-                    font-size: .7rem;
-                }
+                gap: 3.6rem;
             }
         }
     }
