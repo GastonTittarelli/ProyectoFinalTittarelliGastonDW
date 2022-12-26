@@ -55,6 +55,12 @@
 }
 
 @media screen and (max-width:1350px) {
+    header{
+        h1 {
+            font-size: 1.3rem;
+        }
+        
+    }
     .productos section {
         a {
             h3 {
@@ -79,6 +85,14 @@
         .otrosProductos {
             article p {
                 font-size: .9rem;
+            }
+        }
+    }
+
+    .nuestroContacto {
+        a {
+            img {
+                width: 100px;
             }
         }
     }
@@ -120,7 +134,7 @@
     }
 
     .mainAcercaDe {
-        height: 280vh;
+        height: 300vh;
     }
 
     .contenedorInfoHistoria {
@@ -181,12 +195,12 @@
         }
 
         .video {
-            height: 55vh;
+            height: 46vh;
             width: 39vw;
 
             iframe {
                 width: 38vw;
-                height: 48vh;
+                height: 45vh;
             }
         }
     }
@@ -204,6 +218,16 @@
             }
         }
     }
+    footer {
+        .redes {   
+            a {
+                img {
+                    height: 4vh;
+                }
+                }
+            }
+        }
+
     .mainProductos {
         height: 320vh;
     }
@@ -594,9 +618,25 @@
             }
         }
     }
+
+    .contenedorUbicacion {
+        grid-template-rows: 6.6fr 12fr 1.4fr;
+    }
+    .contenedorContacto {
+        grid-template-rows: 6.6fr 13fr 1.4fr;
+    }
 }
 
 @media screen and (max-width:596px) {
+    footer {
+        .redes {   
+            a {
+                img {
+                    height: 3vh;
+                }
+                }
+            }
+        }
     .conteiner_card {
         .card {
             width: 70vw;

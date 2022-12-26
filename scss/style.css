@@ -15,7 +15,7 @@ body::-webkit-scrollbar-thumb {
 
 header {
   width: 100%;
-  height: 35vh;
+  height: 37vh;
   background: linear-gradient(rgba(236, 234, 234, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/img/tonel3.jpg);
   background-position-y: 70%;
   display: flex;
@@ -123,7 +123,7 @@ main {
   display: grid;
   grid-template-areas: "encabezado" "seccion" "pie";
   grid-template-columns: 1fr;
-  grid-template-rows: 7fr 12fr 1fr;
+  grid-template-rows: 7.4fr 13fr 1.4fr;
 }
 
 .header {
@@ -142,7 +142,7 @@ main {
   display: grid;
   grid-template-areas: "encabezado" "seccion" "pie";
   grid-template-columns: 1fr;
-  grid-template-rows: 7fr 12fr 1fr;
+  grid-template-rows: 7.4fr 13fr 1.4fr;
 }
 
 .header {
@@ -442,26 +442,30 @@ main {
 
 footer {
   background-color: black;
-  height: 5vh;
+  height: 7vh;
   width: 100%;
   display: flex;
 }
 footer .redes {
   width: 10%;
-  height: 5vh;
+  height: 7vh;
   display: flex;
   align-items: center;
   gap: 1.5rem;
   justify-content: center;
 }
+footer .redes a {
+  display: flex;
+  align-items: center;
+}
 footer .redes a img {
-  width: 3vh;
-  height: auto;
+  width: auto;
+  height: 4.5vh;
 }
 footer .parrafoFooter {
   color: rgb(199, 199, 199);
   width: 90%;
-  height: 5vh;
+  height: 7vh;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -608,7 +612,7 @@ footer .parrafoFooter p {
 
 .formulario {
   width: 40vw;
-  height: 59vh;
+  height: 64vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -697,6 +701,9 @@ footer .parrafoFooter p {
   }
 }
 @media screen and (max-width: 1350px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
   .productos section a h3 {
     font-size: 0.9rem;
   }
@@ -708,6 +715,9 @@ footer .parrafoFooter p {
   }
   .mainProductos .otrosProductos article p {
     font-size: 0.9rem;
+  }
+  .nuestroContacto a img {
+    width: 100px;
   }
 }
 @media screen and (max-width: 1276px) {
@@ -730,7 +740,7 @@ footer .parrafoFooter p {
     width: 35vw;
   }
   .mainAcercaDe {
-    height: 280vh;
+    height: 300vh;
   }
   .contenedorInfoHistoria {
     height: 210vh;
@@ -779,12 +789,12 @@ footer .parrafoFooter p {
     width: 90vw;
   }
   .infoDistribucion .video {
-    height: 55vh;
+    height: 46vh;
     width: 39vw;
   }
   .infoDistribucion .video iframe {
     width: 38vw;
-    height: 48vh;
+    height: 45vh;
   }
   .mapa iframe {
     width: 50vw;
@@ -793,6 +803,9 @@ footer .parrafoFooter p {
 @media screen and (max-width: 1152px) {
   header nav ul {
     gap: 6rem;
+  }
+  footer .redes a img {
+    height: 4vh;
   }
   .mainProductos {
     height: 320vh;
@@ -1053,8 +1066,17 @@ footer .parrafoFooter p {
   .contenedorInfoHistoria .infoDistribucion .infoText p {
     margin: 0;
   }
+  .contenedorUbicacion {
+    grid-template-rows: 6.6fr 12fr 1.4fr;
+  }
+  .contenedorContacto {
+    grid-template-rows: 6.6fr 13fr 1.4fr;
+  }
 }
 @media screen and (max-width: 596px) {
+  footer .redes a img {
+    height: 3vh;
+  }
   .conteiner_card .card {
     width: 70vw;
   }
